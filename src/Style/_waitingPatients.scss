@@ -1,0 +1,52 @@
+.waiting-patients-container {
+    width: 50%;
+    margin: 0 20px;
+    h2 {
+        color: $headerColor;
+    }
+
+    .patient-widget-container {
+        box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0;
+        padding: 30px 40px;
+        height: 50px;
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(247,216,107,1) 0%, rgba(247,216,107,1) 4%, rgba(255,255,255,1) 4%);
+
+        h3 {
+            font-size: 12px;
+        }
+
+        p {
+            font-size: 36px;
+            margin: 10px 0;
+        }
+
+        button {
+            height: 45px;
+            width: 150px;
+            background-color: $seePatientButtonColor;
+            color: white;
+            border-radius: 12px;
+            border-style: none;
+            font-weight: bold;
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+
+        #remove-icon {
+            font-size: 36px;
+        }
+
+        #remove-icon:hover {
+            cursor: pointer;
+        }
+
+        
+    }
+}

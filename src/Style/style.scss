@@ -1,0 +1,14 @@
+@import 'patientqueue.scss';
+@import 'currentPatient.scss';
+@import 'waitingPatients.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import 'colors+fonts.scss';
+
+* {
+    font-family: Roboto;
+    margin: 0;
+}
+
+html {
+    background-color: #ECF0F5;
+}
