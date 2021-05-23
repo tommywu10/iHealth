@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/iHealth/static/css/main.1bdd7248.chunk.css",
+    "main.js": "/iHealth/static/js/main.2e850084.chunk.js",
+    "main.js.map": "/iHealth/static/js/main.2e850084.chunk.js.map",
+    "runtime-main.js": "/iHealth/static/js/runtime-main.4c37ddcd.js",
+    "runtime-main.js.map": "/iHealth/static/js/runtime-main.4c37ddcd.js.map",
+    "static/js/2.d4886570.chunk.js": "/iHealth/static/js/2.d4886570.chunk.js",
+    "static/js/2.d4886570.chunk.js.map": "/iHealth/static/js/2.d4886570.chunk.js.map",
+    "static/js/3.ad83359d.chunk.js": "/iHealth/static/js/3.ad83359d.chunk.js",
+    "static/js/3.ad83359d.chunk.js.map": "/iHealth/static/js/3.ad83359d.chunk.js.map",
+    "index.html": "/iHealth/index.html",
+    "static/css/main.1bdd7248.chunk.css.map": "/iHealth/static/css/main.1bdd7248.chunk.css.map",
+    "static/js/2.d4886570.chunk.js.LICENSE.txt": "/iHealth/static/js/2.d4886570.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4c37ddcd.js",
+    "static/js/2.d4886570.chunk.js",
+    "static/css/main.1bdd7248.chunk.css",
+    "static/js/main.2e850084.chunk.js"
+  ]
+}
