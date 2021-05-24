@@ -6,6 +6,7 @@ function PatientQueue({patientsArray}) {
     const [currentName, setCurrentName] = useState('')
     const [currentDuration, setCurrentDuration] = useState('')
     const [currentDoctor, setCurrentDoctor] = useState('')
+    const [isNew, setIsNew] = useState('')
     return (
         <div>
             <h1 id="patient-queue-title">Patient Queue</h1>
@@ -14,7 +15,8 @@ function PatientQueue({patientsArray}) {
                     patientsArray={patientsArray} 
                     currentName={currentName}  
                     currentDuration={currentDuration} 
-                    currentDoctor={currentDoctor} />
+                    currentDoctor={currentDoctor} 
+                    isNew={isNew}/>
                 <WaitingPatients 
                     patientsArray={patientsArray} 
                     currentName={currentName}  
@@ -22,7 +24,8 @@ function PatientQueue({patientsArray}) {
                     currentDoctor={currentDoctor} 
                     setCurrentName={setCurrentName} 
                     setCurrentDuration={setCurrentDuration} 
-                    setCurrentDoctor={setCurrentDoctor}/>
+                    setCurrentDoctor={setCurrentDoctor}
+                    setIsNew={setIsNew}/>
             </div>
             
         </div>

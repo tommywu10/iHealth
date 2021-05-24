@@ -2,10 +2,11 @@
     margin: 0 20px;
     flex: 1;
     overflow: scroll;
-    height: 100vh;
-    
+    height: 80vh;
+
     h2 {
         color: $headerColor;
+        margin: 0 0 30px;
     }
 
     .patient-widget {

@@ -1,13 +1,18 @@
 import React, {useState} from 'react'
 import {FaTimes} from 'react-icons/fa'
 
-function PatientWidget({name, waitTime, doctor, isNew, setCurrentName, setCurrentDuration, setCurrentDoctor}) {
+function PatientWidget({name, waitTime, doctor, isNew, setCurrentName, setCurrentDuration, setCurrentDoctor, setIsNew}) {
 
     function handleClick(){
         setCurrentName(name)
         setCurrentDuration(waitTime)
         setCurrentDoctor(doctor)
+        setIsNew(isNew)
         console.log()
+    }
+
+    function deletePatient(){
+        
     }
 
     return (
@@ -24,7 +29,7 @@ function PatientWidget({name, waitTime, doctor, isNew, setCurrentName, setCurren
 
             <button type="button" onClick={handleClick}>SEE PATIENT</button>
 
-            <FaTimes id="remove-icon"/>
+            <FaTimes id="remove-icon" onClick={deletePatient}/>
         </div>
     )
 }

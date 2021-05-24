@@ -1,26 +1,30 @@
 import React from 'react'
 
-function CurrentPatient({currentName, currentDuration, currentDoctor}) {
+function CurrentPatient({currentName, currentDuration, currentDoctor, isNew}) {
 
     return (
         <div className="current-patient-container">
             <h2>Current Patient</h2>
-            <div className="current-patient-card">
+            <div className={!currentName ? 'current-patient-card' : 'current-patient-card active'}>
+                {isNew ? <p id="new-patient-indicator">NEW PATIENT</p> : null }
+
                 <h3>PATIENT</h3>
-                <p id="patient-name">{currentName}</p>
+                <p id="patient-name">{!currentName ? 'N/A' : currentName}</p>
 
                 <h4>DURATION</h4>
-                <p>{currentDuration}</p>
+                <p>{!currentDuration ? 'N/A' : currentDuration}</p>
 
                 <h4>ATTENDING DOCTOR</h4>
-                <p>{currentDoctor}</p>
+                <p>{!currentDoctor ? 'N/A' : currentDoctor}</p>
 
-                <div className="top-buttons">
-                    <button>COPY INFO</button>
-                    <button>VIEW INFO</button>
+                <div className="current-patient-buttons">
+                    <div className="top-buttons">
+                        <button>COPY INFO</button>
+                        <button>VIEW INFO</button>
+                    </div>
+
+                    <button id="discharge-button">DISCHARGE PATIENT</button>
                 </div>
-
-                <button id="discharge-button">DISCHARGE PATIENT</button>
             </div>
         </div>
     )
