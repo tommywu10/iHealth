@@ -1,18 +1,19 @@
 import React from 'react'
 
-function CurrentPatient() {
+function CurrentPatient({currentName, currentDuration, currentDoctor}) {
+
     return (
         <div className="current-patient-container">
             <h2>Current Patient</h2>
             <div className="current-patient-card">
                 <h3>PATIENT</h3>
-                <p id="patient-name">N/A</p>
+                <p id="patient-name">{currentName}</p>
 
                 <h4>DURATION</h4>
-                <p>N/A</p>
+                <p>{currentDuration}</p>
 
                 <h4>ATTENDING DOCTOR</h4>
-                <p>N/A</p>
+                <p>{currentDoctor}</p>
 
                 <div className="top-buttons">
                     <button>COPY INFO</button>

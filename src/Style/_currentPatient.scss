@@ -4,6 +4,8 @@
     
     width: 40%;
     margin: 0 30px;
+    align-self: flex-start;
+    position: sticky;
 
     h2 {
         color: $headerColor;
